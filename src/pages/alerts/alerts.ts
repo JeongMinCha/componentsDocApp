@@ -7,4 +7,24 @@ export class AlertsPage {
     constructor() {
         
     }
+
+    showBasicAlert() {
+
+    }
+
+    showPromptAlert() {
+
+    }
+
+    showConfirmationAlert() {
+
+    }
+
+    showRadioAlert() {
+
+    }
+
+    showCheckboxAlert() {
+        
+    }
 }
