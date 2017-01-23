@@ -4,6 +4,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertsPage } from '../pages/alerts/alerts';
+import { BadgesPage } from '../pages/badges/badges';
 
 
 @Component({
@@ -22,7 +23,8 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Action Sheet', component: ActionSheetPage },
-      { title: 'Alerts', component: AlertsPage }
+      { title: 'Alerts', component: AlertsPage },
+      { title: 'Badges', component: BadgesPage },
     ];
 
   }
