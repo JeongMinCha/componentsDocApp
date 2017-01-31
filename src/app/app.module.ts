@@ -4,6 +4,7 @@ import { MyApp } from './app.component';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertsPage } from '../pages/alerts/alerts';
 import { ButtonsPage } from '../pages/buttons/buttons';
+import { CardsPage } from '../pages/cards/cards';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { ButtonsPage } from '../pages/buttons/buttons';
     ActionSheetPage,
     AlertsPage,
     ButtonsPage,
+    CardsPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -21,6 +23,7 @@ import { ButtonsPage } from '../pages/buttons/buttons';
     ActionSheetPage,
     AlertsPage,
     ButtonsPage,
+    CardsPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

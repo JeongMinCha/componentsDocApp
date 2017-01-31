@@ -5,7 +5,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertsPage } from '../pages/alerts/alerts';
 import { ButtonsPage } from '../pages/buttons/buttons';
-
+import { CardsPage } from '../pages/cards/cards';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,6 +25,7 @@ export class MyApp {
       { title: 'Action Sheet', component: ActionSheetPage },
       { title: 'Alerts', component: AlertsPage },
       { title: 'Buttons', component: ButtonsPage },
+      { title: 'Cards', component: CardsPage },
     ];
 
   }
