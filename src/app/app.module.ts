@@ -5,6 +5,8 @@ import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertsPage } from '../pages/alerts/alerts';
 import { ButtonsPage } from '../pages/buttons/buttons';
 import { CardsPage } from '../pages/cards/cards';
+import { BackgroundImageCardsPage } from '../pages/cards/bg-cards/bg-cards';
+import { SocialCardsPage } from '../pages/cards/social-cards/social-cards';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { CardsPage } from '../pages/cards/cards';
     AlertsPage,
     ButtonsPage,
     CardsPage,
+      BackgroundImageCardsPage,
+      SocialCardsPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -24,6 +28,8 @@ import { CardsPage } from '../pages/cards/cards';
     AlertsPage,
     ButtonsPage,
     CardsPage,
+      BackgroundImageCardsPage,
+      SocialCardsPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
