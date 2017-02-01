@@ -5,7 +5,15 @@ import { NavController } from 'ionic-angular';
     templateUrl: 'cards.html'
 })
 export class CardsPage {
-    constructor() {
+    constructor(public navCtrl: NavController) {
 
+    }
+
+    openBackgroundImageCardPage() {
+
+    }
+
+    openSocialCardPage() {
+        
     }
 }
