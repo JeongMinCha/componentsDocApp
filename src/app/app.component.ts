@@ -6,6 +6,7 @@ import { ActionSheetPage } from '../pages/action-sheet/action-sheet';
 import { AlertsPage } from '../pages/alerts/alerts';
 import { ButtonsPage } from '../pages/buttons/buttons';
 import { CardsPage } from '../pages/cards/cards';
+import { DateTimePage } from '../pages/datetime/datetime';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,6 +27,7 @@ export class MyApp {
       { title: 'Alerts', component: AlertsPage },
       { title: 'Buttons', component: ButtonsPage },
       { title: 'Cards', component: CardsPage },
+      { title: 'Datetime', component: DateTimePage },
     ];
 
   }

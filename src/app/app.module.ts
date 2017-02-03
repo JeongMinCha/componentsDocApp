@@ -7,6 +7,7 @@ import { ButtonsPage } from '../pages/buttons/buttons';
 import { CardsPage } from '../pages/cards/cards';
 import { BackgroundImageCardsPage } from '../pages/cards/bg-cards/bg-cards';
 import { SocialCardsPage } from '../pages/cards/social-cards/social-cards';
+import { DateTimePage } from '../pages/datetime/datetime';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SocialCardsPage } from '../pages/cards/social-cards/social-cards';
     CardsPage,
       BackgroundImageCardsPage,
       SocialCardsPage,
+    DateTimePage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,6 +32,7 @@ import { SocialCardsPage } from '../pages/cards/social-cards/social-cards';
     CardsPage,
       BackgroundImageCardsPage,
       SocialCardsPage,
+    DateTimePage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
