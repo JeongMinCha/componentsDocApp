@@ -8,6 +8,7 @@ import { ButtonsPage } from '../pages/buttons/buttons';
 import { CardsPage } from '../pages/cards/cards';
 import { DateTimePage } from '../pages/datetime/datetime';
 import { FABPage } from '../pages/fab/fab';
+import { InputsPage } from '../pages/inputs/inputs';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,6 +31,7 @@ export class MyApp {
       { title: 'Cards', component: CardsPage },
       { title: 'Datetime', component: DateTimePage },
       { title: 'FAB', component: FABPage },
+      { title: 'Inputs', component: InputsPage },
     ];
 
   }
