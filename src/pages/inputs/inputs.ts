@@ -7,6 +7,7 @@ import { SuccessPage } from './success/success';
     templateUrl: 'inputs.html'
 })
 export class InputsPage {
+    labelColor: string = "primary";
     username: string = "";
     password: string = "";
 
@@ -18,5 +19,13 @@ export class InputsPage {
         this.navCtrl.push(SuccessPage, {
             username: this.username,
         });
+    }
+
+    doBlur() {
+        this.labelColor = "danger";
+    }
+
+    doFocus() {
+        this.labelColor = "secondary";
     }
 }

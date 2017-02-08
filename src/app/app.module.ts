@@ -11,6 +11,7 @@ import { DateTimePage } from '../pages/datetime/datetime';
 import { FABPage } from '../pages/fab/fab';
 import { InputsPage } from '../pages/inputs/inputs';
 import { SuccessPage } from '../pages/inputs/success/success';
+import { ListsPage } from '../pages/lists/lists';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SuccessPage } from '../pages/inputs/success/success';
     FABPage,
     InputsPage,
       SuccessPage,
+    ListsPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -42,6 +44,7 @@ import { SuccessPage } from '../pages/inputs/success/success';
     FABPage,
     InputsPage,
       SuccessPage,
+    ListsPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
