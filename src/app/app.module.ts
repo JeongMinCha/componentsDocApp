@@ -12,6 +12,7 @@ import { FABPage } from '../pages/fab/fab';
 import { InputsPage } from '../pages/inputs/inputs';
 import { SuccessPage } from '../pages/inputs/success/success';
 import { ListsPage } from '../pages/lists/lists';
+import { DetailPage } from '../pages/lists/detail/detail';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ListsPage } from '../pages/lists/lists';
     InputsPage,
       SuccessPage,
     ListsPage,
+      DetailPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -45,6 +47,7 @@ import { ListsPage } from '../pages/lists/lists';
     InputsPage,
       SuccessPage,
     ListsPage,
+      DetailPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
