@@ -10,6 +10,7 @@ import { SocialCardsPage } from '../pages/cards/social-cards/social-cards';
 import { DateTimePage } from '../pages/datetime/datetime';
 import { FABPage } from '../pages/fab/fab';
 import { InputsPage } from '../pages/inputs/inputs';
+import { SuccessPage } from '../pages/inputs/success/success';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { InputsPage } from '../pages/inputs/inputs';
     DateTimePage,
     FABPage,
     InputsPage,
+      SuccessPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -39,6 +41,7 @@ import { InputsPage } from '../pages/inputs/inputs';
     DateTimePage,
     FABPage,
     InputsPage,
+      SuccessPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
