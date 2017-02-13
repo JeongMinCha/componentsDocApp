@@ -2,6 +2,7 @@ export class Person {
     avatar: string = "";
     name: string = "";
     detail: string = "";
+    story: string = "";
 
     constructor(avatar, name, detail) {
         this.avatar = avatar;
