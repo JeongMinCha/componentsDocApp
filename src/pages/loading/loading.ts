@@ -17,4 +17,31 @@ export class LoadingPage {
         });
         loader.present();
     }
+
+    presentLoadingCircles() {
+        let loader = this.loadingCtrl.create({
+            spinner: 'circles',
+            content: 'Please wait...',
+            duration: 3000,
+        });
+        loader.present();
+    }
+
+    presentLoadingBubbles() {
+        let loader = this.loadingCtrl.create({
+            spinner: 'bubbles',
+            content: 'Please wait...',
+            duration: 3000,
+        });
+        loader.present();
+    }
+
+    presentLoadingCrescent() {
+        let loader = this.loadingCtrl.create({
+            spinner: 'crescent',
+            content: 'Please wait...',
+            duration: 3000,
+        });
+        loader.present();
+    }
 }
