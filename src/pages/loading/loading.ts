@@ -9,13 +9,12 @@ export class LoadingPage {
 
     }
 
-    presentLoading() {
-        let loader = this.loadingCtrl.create({
-            spinner: 'bubbles',
-            content: 'Please wait...',
-            duration: 3000,
+    getPromise() {
+        return new Promise(function(resolve, reject){
+            setTimeout(() => {
+                resolve("Success!");
+            }, 2000);
         });
-        loader.present();
     }
 
     presentLoadingCircles() {
@@ -25,6 +24,16 @@ export class LoadingPage {
             duration: 3000,
         });
         loader.present();
+
+        this.getPromise().then(
+            (data) => {
+                console.log(data);
+                loader.dismiss();
+            }, 
+            (error) => {
+                
+            }
+        );
     }
 
     presentLoadingBubbles() {
