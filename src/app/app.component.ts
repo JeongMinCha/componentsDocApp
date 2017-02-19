@@ -10,6 +10,7 @@ import { DateTimePage } from '../pages/datetime/datetime';
 import { FABPage } from '../pages/fab/fab';
 import { InputsPage } from '../pages/inputs/inputs';
 import { ListsPage } from '../pages/lists/lists';
+import { LoadingPage } from '../pages/loading/loading';
 
 @Component({
   templateUrl: 'app.html'
@@ -34,6 +35,7 @@ export class MyApp {
       { title: 'FAB', component: FABPage },
       { title: 'Inputs', component: InputsPage },
       { title: 'Lists', component: ListsPage },
+      { title: 'Loading', component: LoadingPage },
     ];
 
   }

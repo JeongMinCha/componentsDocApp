@@ -13,6 +13,7 @@ import { InputsPage } from '../pages/inputs/inputs';
 import { SuccessPage } from '../pages/inputs/success/success';
 import { ListsPage } from '../pages/lists/lists';
 import { DetailPage } from '../pages/lists/detail/detail';
+import { LoadingPage } from '../pages/loading/loading';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { DetailPage } from '../pages/lists/detail/detail';
       SuccessPage,
     ListsPage,
       DetailPage,
+    LoadingPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -48,6 +50,7 @@ import { DetailPage } from '../pages/lists/detail/detail';
       SuccessPage,
     ListsPage,
       DetailPage,
+    LoadingPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
