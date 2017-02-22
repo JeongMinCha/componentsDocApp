@@ -26,7 +26,9 @@ export class ModalPage {
     }
 
     openModalPage(email) {
-        let modal = this.modalCtrl.create(ModalDetailPage);
+        let modal = this.modalCtrl.create(ModalDetailPage, {
+            email: email
+        });
         modal.present();
     }
 }
@@ -44,18 +46,16 @@ export class ModalPage {
         </ion-toolbar>
     </ion-header>
     <ion-content>
-        <h1>{{address}}</h1>
-        <p>{{body}}</p>
+        <h1>{{email.address}}</h1>
+        <p>{{email.body}}</p>
     </ion-content>`,
 })
-class ModalDetailPage {
-    address: string;
-    body: string;
+export class ModalDetailPage {
+    email: Email;
 
     constructor(public navParams: NavParams,
                 public viewCtrl: ViewController) {
-        this.address = this.navParams.get("address");
-        this.body = this.navParams.get("body");
+        this.email = this.navParams.get("email");
     }
 
     dismiss() {

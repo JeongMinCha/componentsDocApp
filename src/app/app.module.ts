@@ -14,7 +14,7 @@ import { SuccessPage } from '../pages/inputs/success/success';
 import { ListsPage } from '../pages/lists/lists';
 import { DetailPage } from '../pages/lists/detail/detail';
 import { LoadingPage } from '../pages/loading/loading';
-import { ModalPage } from '../pages/modals/modals';
+import { ModalPage, ModalDetailPage } from '../pages/modals/modals';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ import { ModalPage } from '../pages/modals/modals';
       DetailPage,
     LoadingPage,
     ModalPage,
+      ModalDetailPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -54,6 +55,7 @@ import { ModalPage } from '../pages/modals/modals';
       DetailPage,
     LoadingPage,
     ModalPage,
+      ModalDetailPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
