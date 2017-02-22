@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ModalController } from 'ionic-angular';
+import { ModalController, NavParams, ViewController } from 'ionic-angular';
 
 class Email {
     address: string;
@@ -26,7 +26,39 @@ export class ModalPage {
     }
 
     openModalPage(email) {
-        let modal = this.modalCtrl.create();
+        let modal = this.modalCtrl.create(ModalDetailPage);
         modal.present();
+    }
+}
+
+@Component({
+    template: `
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Detail</ion-title>
+            <ion-buttons start>
+                <button ion-button (click)="dismiss()">
+                    <span ion-text color="primary">Cancel</span>
+                </button>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <h1>{{address}}</h1>
+        <p>{{body}}</p>
+    </ion-content>`,
+})
+class ModalDetailPage {
+    address: string;
+    body: string;
+
+    constructor(public navParams: NavParams,
+                public viewCtrl: ViewController) {
+        this.address = this.navParams.get("address");
+        this.body = this.navParams.get("body");
+    }
+
+    dismiss() {
+        this.viewCtrl.dismiss();
     }
 }
