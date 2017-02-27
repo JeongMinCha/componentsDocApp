@@ -10,10 +10,25 @@ export class PopoverPage {
         
     }
 
-    presentPopover() {
+    presentPopover(myEvent) {
         let popover = this.popoverCtrl.create(PopoverDetailPage, {
-
+            
         });
-        popover.present();
+        popover.present({ ev: myEvent });
     }
+}
+
+@Component({
+    template:
+    `<ion-list no-lines>
+        <button ion-item detail-none>
+            +
+        </button>
+        <button ion-item detail-none>
+            -
+        </button>
+    </ion-list>`
+})
+export class PopoverDetailPage {
+    
 }
