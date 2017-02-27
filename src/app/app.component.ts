@@ -13,6 +13,7 @@ import { ListsPage } from '../pages/lists/lists';
 import { LoadingPage } from '../pages/loading/loading';
 import { ModalPage } from '../pages/modals/modals';
 import { PopoverPage } from '../pages/popovers/popovers';
+import { RangePage } from '../pages/range/range';
 
 @Component({
   templateUrl: 'app.html'
@@ -40,6 +41,7 @@ export class MyApp {
       { title: 'Loading', component: LoadingPage },
       { title: 'Modals', component: ModalPage },
       { title: 'Popovers', component: PopoverPage },
+      { title: 'Range', component: RangePage },
     ];
 
   }

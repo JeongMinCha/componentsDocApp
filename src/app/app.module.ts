@@ -16,6 +16,7 @@ import { DetailPage } from '../pages/lists/detail/detail';
 import { LoadingPage } from '../pages/loading/loading';
 import { ModalPage, ModalDetailPage } from '../pages/modals/modals';
 import { PopoverPage, PopoverDetailPage } from '../pages/popovers/popovers';
+import { RangePage } from '../pages/range/range';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { PopoverPage, PopoverDetailPage } from '../pages/popovers/popovers';
       ModalDetailPage,
     PopoverPage,
       PopoverDetailPage,
+    RangePage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -61,6 +63,7 @@ import { PopoverPage, PopoverDetailPage } from '../pages/popovers/popovers';
       ModalDetailPage,
     PopoverPage,
       PopoverDetailPage,
+    RangePage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
