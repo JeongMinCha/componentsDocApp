@@ -10,4 +10,10 @@
 </ion-header>
 
 <ion-content>
+  <ion-searchbar animated (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
 </ion-content>
