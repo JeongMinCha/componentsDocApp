@@ -15,6 +15,7 @@ import { ModalPage } from '../pages/modals/modals';
 import { PopoverPage } from '../pages/popovers/popovers';
 import { RangePage } from '../pages/range/range';
 import { SearchbarPage } from '../pages/searchbar/searchbar';
+import { SlidePage } from '../pages/slides/slides';
 
 @Component({
   templateUrl: 'app.html'
@@ -44,6 +45,7 @@ export class MyApp {
       { title: 'Popovers', component: PopoverPage },
       { title: 'Range', component: RangePage },
       { title: 'Searchbar', component: SearchbarPage },
+      { title: 'Slides', component: SlidePage },
     ];
 
   }
