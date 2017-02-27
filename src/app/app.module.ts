@@ -17,6 +17,7 @@ import { LoadingPage } from '../pages/loading/loading';
 import { ModalPage, ModalDetailPage } from '../pages/modals/modals';
 import { PopoverPage, PopoverDetailPage } from '../pages/popovers/popovers';
 import { RangePage } from '../pages/range/range';
+import { SearchbarPage } from '../pages/searchbar/searchbar';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { RangePage } from '../pages/range/range';
     PopoverPage,
       PopoverDetailPage,
     RangePage,
+    SearchbarPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -64,6 +66,7 @@ import { RangePage } from '../pages/range/range';
     PopoverPage,
       PopoverDetailPage,
     RangePage,
+    SearchbarPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
