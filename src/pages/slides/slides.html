@@ -9,7 +9,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="slides-page">
   <ion-slides pager>
     <ion-slide *ngFor="let slide of slides">
       <ion-toolbar>
@@ -17,8 +17,8 @@
           <button ion-button color="primary">Skip</button>
         </ion-buttons>
       </ion-toolbar>
-      <img [src]="slide.img"/>
-      <h2 [innerHTML]="slide.title"></h2>
+      <img [src]="slide.img" class="slide-image"/>
+      <h2 [innerHTML]="slide.title" class="slide-title"></h2>
       <p [innerHTML]="slide.content"></p>
     </ion-slide>
   </ion-slides>
