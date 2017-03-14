@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { Slides } from 'ionic-angular';
 
 @Component({
     templateUrl: 'slides.html'
 })
 export class SlidePage {
+    @ViewChild(Slides) childSlides: Slides;
+
     slides = [
         {
             img: "assets/img/ica-slidebox-img-1.png",
@@ -21,4 +24,9 @@ export class SlidePage {
             content: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
         }
     ];
+
+    skip() {
+        let lastIndex = this.childSlides.length() - 1;
+        this.childSlides.slideTo(lastIndex, 0);
+    }
 }
